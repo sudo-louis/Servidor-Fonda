@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "fonda-admins-express-js-mongo-db",
+    "builds": [
+        {
+            "src": "server.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/server.js"
+        }
+    ]
+}
